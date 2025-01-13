@@ -3,6 +3,7 @@
 * {
   font-family: 'Lobster', cursive;
   font-size: 1.1em; /* Aumentar el tamaño de la fuente un poco más que antes */
+  box-sizing: border-box; /* Asegurar que el padding y el borde se incluyan en el tamaño total */
 }
 
 .app {
@@ -207,7 +208,7 @@
 
 .attractions-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Hacer la cuadrícula responsive */
   gap: 20px;
 }
 
@@ -265,4 +266,27 @@
 
 .attractions ul li p {
   margin: 5px 0 0;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .portada {
+    height: 300px; /* Ajustar la altura de la portada para pantallas más pequeñas */
+  }
+
+  .carousel .slide img {
+    height: 300px; /* Ajustar la altura de las imágenes del carrusel para pantallas más pequeñas */
+  }
+
+  .card-content h3 {
+    font-size: 1em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+  }
+
+  .card-content p {
+    font-size: 0.6em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+  }
 }
