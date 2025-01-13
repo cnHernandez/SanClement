@@ -41,6 +41,10 @@
   width: 100%;
   background-color: #333;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .navbar ul {
@@ -63,6 +67,12 @@
 
 .navbar ul li a:hover {
   text-decoration: underline;
+}
+
+.navbar .menu-icon {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
 .portada {
@@ -272,6 +282,15 @@
 @media (max-width: 768px) {
   .navbar ul {
     flex-direction: column;
+    display: none; /* Ocultar el menú en pantallas pequeñas */
+  }
+
+  .navbar ul.show {
+    display: flex; /* Mostrar el menú cuando se haga clic en el icono */
+  }
+
+  .navbar .menu-icon {
+    display: block; /* Mostrar el icono del menú en pantallas pequeñas */
   }
 
   .portada {

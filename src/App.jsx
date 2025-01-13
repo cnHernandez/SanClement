@@ -23,10 +23,19 @@ import React from 'react';
 import Attractions from './Attractions';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="app">
       <div className="navbar">
-        <ul>
+        <div className="menu-icon" onClick={toggleMenu}>
+          &#9776; {/* Icono de menú */}
+        </div>
+        <ul className={menuOpen ? 'show' : ''}>
           <li><a href="#footer">Contacto</a></li> {/* Enlace al footer */}
           <li><a href="#carousel">Fotos</a></li> {/* Enlace al carrusel */}
           <li><a href="#map">Ubicación</a></li> {/* Enlace al mapa */}
