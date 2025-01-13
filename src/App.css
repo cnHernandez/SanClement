@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  font-family: 'Lobster', cursive;
+  font-size: 1.1em; /* Aumentar el tamaño de la fuente un poco más que antes */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  transition: width 0.3s;
+}
+
+.sidebar:hover {
+  width: 250px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: white;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.navbar ul li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.portada {
+  width: 100%;
+  background: url(https://www.portaldelacosta.com.ar/images/portada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Lobster Two', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: flex-end; /* Alinear el contenido al final verticalmente */
+  height: 400px; /* Aumentar la altura de la portada */
+  text-align: center;
+  padding-bottom: 20px; /* Añadir padding inferior */
+}
+
+.portada-content {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.portada h1 {
+  font-size: 2.5em; /* Hacer el texto más grande */
+  font-weight: bold; /* Hacer el texto en negrita */
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Asegurar que el contenedor del carrusel sea el contenedor de referencia */
+}
+
+.carousel .slide {
+  background-color: #f0f0f0; /* Color de fondo para los espacios en blanco */
+  background-image: url('https://www.travelandes.com/img/GalleryContent/111986/san_clemente_de_tuyu_3.jpg'); /* Imagen de fondo para los espacios en blanco */
+  background-size: cover; /* Asegurar que la imagen de fondo cubra todo el contenedor */
+  background-position: center; /* Centrar la imagen de fondo */
+}
+
+.carousel .slide img {
+  width: 100%;
+  height: 600px; /* Ajustar la altura de las imágenes */
+  object-fit: contain; /* Asegurar que las imágenes se ajusten al contenedor sin recortarse */
+}
+
+/* Eliminar los estilos relacionados con las miniaturas */
+/*
+.carousel .thumbs-wrapper {
+  margin-top: 0; 
+  background-color: #333; 
+  padding: 10px 0; 
+  width: 100vw; 
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  box-sizing: border-box; 
+  z-index: 1000; 
+}
+
+.carousel .thumb {
+  border: 2px solid #ddd;
+  padding: 2px;
+  width: 150px; 
+  height: 100px; 
+  object-fit: contain; 
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border-color: #fff; 
+}
+*/
+
+.map-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0; /* Eliminar el margen superior */
+  position: relative; /* Asegurar que el contenedor del mapa sea el contenedor de referencia */
+  top: -4px; /* Ajustar la posición para pegarlo al carrusel */
+}
+
+.footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center; /* Centrar el contenido */
+  align-items: center;
+  padding: 10px 20px; /* Añadir padding para separar el contenido de los bordes */
+  position: relative; /* Cambiar a relative para asegurar que el footer sea visible */
+  bottom: 0;
+  margin-top: 20px; /* Añadir margen superior para separarlo del contenido anterior */
+}
+
+.whatsapp-icon {
+  width: 60px; /* Aumentar el tamaño del icono */
+  height: 60px; /* Aumentar el tamaño del icono */
+  margin-left: 10px; /* Añadir espacio entre el texto y el icono */
+  margin-top: 10px; /* Añadir espacio entre el texto y el icono */
+  transition: transform 0.2s; /* Añadir transición para el efecto hover */
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.2); /* Aumentar el tamaño del icono al pasar el cursor */
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.attractions {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.attractions h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Aumentar la altura de las imágenes */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 0.8em; /* Hacer el nombre mucho más pequeño */
+  margin: 10px 0;
+}
+
+.card-content p {
+  font-size: 0.4em; /* Hacer la descripción aún más pequeña */
+  color: #555;
+}
+
+.card a {
+  text-decoration: none; /* Eliminar el subrayado */
+  color: inherit; /* Mantener el color del texto */
+}
+
+.attractions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.attractions ul li {
+  margin-bottom: 15px;
+}
+
+.attractions ul li h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.attractions ul li p {
+  margin: 5px 0 0;
+}
