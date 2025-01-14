@@ -306,7 +306,7 @@
   }
 
   .portada h1 {
-    font-size: 8vw; /* Ajustar el tamaño del texto de la portada */
+    font-size: 6vw; /* Ajustar el tamaño del texto de la portada */
   }
 
   .carousel .slide img {
@@ -314,11 +314,11 @@
   }
 
   .card-content h3 {
-    font-size: 1em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+    font-size: 0.8em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
   }
 
   .card-content p {
-    font-size: 0.6em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+    font-size: 0.4em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
   }
 
   .attractions-grid {
