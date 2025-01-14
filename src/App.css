@@ -218,7 +218,7 @@
 
 .attractions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Hacer la cuadrícula responsive */
+  grid-template-columns: repeat(4, 1fr); /* Ajustar la cuadrícula a 4 columnas */
   gap: 20px;
 }
 
