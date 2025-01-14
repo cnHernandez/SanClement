@@ -101,6 +101,7 @@
   font-size: 5vw; /* Hacer el texto responsive */
   font-weight: bold; /* Hacer el texto en negrita */
   margin: 0;
+  z-index: 1; /* Asegurar que el texto esté por encima del menú */
 }
 
 .gallery {
@@ -306,7 +307,7 @@
   }
 
   .portada h1 {
-    font-size: 6vw; /* Ajustar el tamaño del texto de la portada */
+    font-size: 8vw; /* Ajustar el tamaño del texto de la portada */
   }
 
   .carousel .slide img {
@@ -314,11 +315,11 @@
   }
 
   .card-content h3 {
-    font-size: 0.8em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+    font-size: 0.6em; /* Hacer el nombre mucho más pequeño */
   }
 
   .card-content p {
-    font-size: 0.4em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+    font-size: 0.3em; /* Hacer la descripción aún más pequeña */
   }
 
   .attractions-grid {
