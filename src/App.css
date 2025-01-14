@@ -42,7 +42,7 @@
   background-color: #333;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centrar el menú */
   align-items: center;
   padding: 10px 20px;
 }
@@ -98,7 +98,7 @@
 }
 
 .portada h1 {
-  font-size: 2.5em; /* Hacer el texto más grande */
+  font-size: 5vw; /* Hacer el texto responsive */
   font-weight: bold; /* Hacer el texto en negrita */
   margin: 0;
 }
@@ -293,8 +293,20 @@
     display: block; /* Mostrar el icono del menú en pantallas pequeñas */
   }
 
+  .navbar ul li {
+    padding: 10px; /* Ajustar el padding de los elementos del menú */
+  }
+
+  .navbar ul li a {
+    font-size: 4vw; /* Ajustar el tamaño del texto del menú */
+  }
+
   .portada {
     height: 300px; /* Ajustar la altura de la portada para pantallas más pequeñas */
+  }
+
+  .portada h1 {
+    font-size: 8vw; /* Ajustar el tamaño del texto de la portada */
   }
 
   .carousel .slide img {
@@ -307,5 +319,9 @@
 
   .card-content p {
     font-size: 0.6em; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+  }
+
+  .attractions-grid {
+    grid-template-columns: repeat(2, 1fr); /* Ajustar la cuadrícula a 2 columnas */
   }
 }
